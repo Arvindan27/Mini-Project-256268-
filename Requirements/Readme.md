@@ -1,7 +1,6 @@
 # Requirements
 ## Introduction
- -- TBD ,.,.,.,.,.,.,
-
+  The objective of this project is to create a application for ride sharing which would bring travel cost of both passesnger and the owner less.
 ## Research
 ![Description](Link to Pic)
 -- Content 
