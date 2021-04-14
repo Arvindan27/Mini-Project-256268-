@@ -25,7 +25,7 @@
     route,the ride is alloted.
   * Estimated fare is calculated based of passenger's start and end point.
 
-  [Project outline](file:///D:/git/mini proj/p1.png)   
+  (file: //../overview.png)   
 ## SWOT ANALYSIS
 ![SWOT-Sample](Link to Pic)
 
