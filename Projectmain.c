@@ -1,6 +1,8 @@
 #include<stdio.h>
 void signup(void);
 void login(void);
+void driver(void);
+void passenger(void);
 int main(){
     int l;
     printf("WELCOME to the Ride sharing application\n");
@@ -46,10 +48,25 @@ void login(void){
     printf("select between driver(1) or passanger(2)?\n");
     scanf("%d",&n);
     if(n==1){
-        printf("driver");
+        printf("driver\n");
+        driver();
     }else{
         printf("passenger");
     }
 
 
+}
+void driver(void){
+    char s;
+    char d;
+    printf("enter start (a to z)\n");
+    scanf(" %c",&s);
+    printf("enter des (a to z)\n");
+    scanf(" %c",&d);
+    printf("%c %c",s,d);
+ 
+}
+void passenger(){
+    
+    
 }
