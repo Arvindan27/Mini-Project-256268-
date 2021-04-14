@@ -2,6 +2,7 @@
 // struct from a file
 #include <stdio.h>
 #include <stdlib.h>
+#include "functions.h"
   
 // struct person with 3 fields
 struct person 
@@ -14,7 +15,7 @@ struct person
 }pr;
   
 // Driver program
-int main ()
+int fetchdriv (char s,char e)
 {
     FILE *infile;
       
@@ -32,6 +33,10 @@ int main ()
   
     // close file
     fclose (infile);
-  
-    return 0;
+    if( pr.start[0]<=s<=pr.end[0] && pr.start[0]<=e<=pr.end[0]){
+       return 1;
+    }else{
+        return 0;
+    }
+    //return 0 ;//(pr.start,pr.end,pr.avail);
 }

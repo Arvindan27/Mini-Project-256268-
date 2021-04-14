@@ -9,8 +9,8 @@ struct person
 {
     int id;
     char name[20];
-    char start[20];
-    char end[20];
+    char start;
+    char end;
     char avail[20];
 
 }pr;
@@ -29,9 +29,9 @@ int main ()
     printf("enter name\n");
     scanf(" %s",pr.name);
     printf("enter start\n");
-    scanf(" %s",pr.start);
+    scanf(" %c",pr.start);
     printf("enter end\n");
-    scanf(" %s",pr.end);
+    scanf(" %c",pr.end);
     printf("enter availabilty\n");
     scanf(" %s",pr.avail);
 

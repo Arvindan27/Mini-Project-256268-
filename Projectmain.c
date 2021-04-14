@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include "functions.h"
 void signup(void);
 void login(void);
 void driver(void);
@@ -52,21 +53,29 @@ void login(void){
         driver();
     }else{
         printf("passenger");
+        passenger();
     }
 
 
 }
 void driver(void){
-    char s;
-    char d;
-    printf("enter start (a to z)\n");
-    scanf(" %c",&s);
-    printf("enter des (a to z)\n");
-    scanf(" %c",&d);
-    printf("%c %c",s,d);
- 
+    system ("driverdet.exe");
+    printf("done");
+
+
 }
 void passenger(){
-    
-    
+    char s1[20],e1[20],a[20];
+    //system ("fetchdriv.exe");
+    //fetchdriv();
+    int a1;
+    char s;
+    char e;
+    printf("Enter pickup location\n");
+    scanf(" %c",&s);
+    printf("Enter enter drop location\n");
+    scanf(" %c",&e);
+    printf("%c,%c",s,e);
+    a1=fetchdriv(s,e);
+    printf("%d",a1);
 }
