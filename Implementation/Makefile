@@ -1,31 +1,38 @@
 # Name of the project
-PROJECT_NAME = Calculator
+PROJECT_NAME = carpool
 
 # Output directory
 BUILD = build
 
 # All source code files
-SRC = project_main.c\
-src/calculator_operations.c
+SRC = src/Projectmain.c\
+src/driverdet.c\
+src/fetchdriv.c\
 
 # All test source files
-TEST_SRC = src/calculator_operations.c\
-test/test_calculator_operations.c\
+TEST_SRC = src/Projectmain.c\
+src/driverdet.c\
+src/fetchdriv.c\
+test/testapp.c\
 unity/unity.c\
-
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
 INC	= -Iinc\
 -Iunity\
 
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+
+# All include folders with header files
+INC	= inc/test.h\
+unity/unity.h\
+unity/unity_internals.h\
+
 #Library Inlcudes
-#if working with CUnit 
-#INCLUDE_LIBS = -lcunit
-INCLUDE_LIBS =
+#INCLUDE_LIBS = 
+INCLUDE_LIBS = -lcunit
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+PROJECT_OUTPUT= $(BUILD)/$(PROJECT_NAME).out
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
@@ -37,24 +44,23 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT).out
 
 # Document the code using Doxygen
-#doc:
-#	make -C ./documentation
+doc:
+	make -C ./documentation
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	gcc $(TEST_SRC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
 	./$(TEST_OUTPUT)
-#Coverage
-coverageCheck:$(BUILD)
-	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
+
+
+
 
 # Remove all the built files, invoke by `make clean`
 clean:
