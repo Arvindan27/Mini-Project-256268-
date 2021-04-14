@@ -24,8 +24,7 @@
   * system takes driver name,starting point,ending point and then readiness to shere.If passenger's route lies within the driver's
     route,the ride is alloted.
   * Estimated fare is calculated based of passenger's start and end point.
-
-  (file: //../overview.png)   
+  ![overview](overview.png)
 ## SWOT ANALYSIS
 ![SWOT-Sample](Link to Pic)
 
