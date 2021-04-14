@@ -3,19 +3,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-  
+#include "test.h"
 // a struct to read and write
 struct person 
 {
     int id;
     char name[20];
-    char start;
-    char end;
+    char start[20];
+    char end[20];
     char avail[20];
 
 }pr;
   
-int main ()
+void driverdet()
 {
     FILE *outfile;
       
@@ -29,9 +29,9 @@ int main ()
     printf("enter name\n");
     scanf(" %s",pr.name);
     printf("enter start\n");
-    scanf(" %c",pr.start);
+    scanf(" %s",pr.start);
     printf("enter end\n");
-    scanf(" %c",pr.end);
+    scanf(" %s",pr.end);
     printf("enter availabilty\n");
     scanf(" %s",pr.avail);
 
@@ -49,5 +49,4 @@ int main ()
     // close file
     fclose (outfile);
   
-    return 0;
 }
