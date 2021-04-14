@@ -1,18 +1,31 @@
 # Requirements
 ## Introduction
-  The objective of this project is to create a code as a prototype for an  application for ride sharing which would bring travel cost of both passesnger and the owner less.
-## Research
+  1.Ride-sharing, or shared mobility, is an “innovative transportation strategy that enables users to gain short-term access to transportation modes on an as-needed basis.” It can include various forms of transportation, such as car-sharing, bike-sharing, carpooling and platform-based ride services (e.g., Uber, Lyft, BlaBlaCar).
+  
+  2.he objective of this project is to create a code as a prototype for an  application for ride sharing which would bring travel cost of both passesnger and the owner less.
+  
+  3.The topic was chosen because it will help me to implement various coding practices learnt.
 
-* Ride-sharing, or shared mobility, is defined as an “innovative transportation strategy that enables users to gain short-term access to transportation modes on an as-needed basis.” It can include various forms of transportation, such as car-sharing, bike-sharing, carpooling and platform-based ride services (e.g., Uber, Lyft, BlaBlaCar).
+## Benifits
+* Some benifits of Ride Sharing system are listed.
+   * Minimises travel cost.
+   * Easy booking proccess.
+   * Saves time.
 
-* Ride-sharing, or shared mobility, is defined as an “innovative transportation strategy that enables users to gain short-term access to transportation modes on an as-needed basis.” It can include various forms of transportation, such as car-sharing, bike-sharing, carpooling and platform-based ride services (e.g., Uber, Lyft, BlaBlaCar).
-
-
-## Cost and Features
-![Description](Link to Pic)
--- Content 
 ## Defining Our System
-    -- TBD
+  1.Choice of beign driver or passenger.
+  2.Driver and Passengers details collection.
+  3.Saving records.
+  4.Checking availability.
+  5.Fare calculation.
+## Assumptions
+  * The last driver details is only store(text file),could be further modified as a database to store multiple records
+  * Route is considered to have 26 stops from a to z.
+  * system takes driver name,starting point,ending point and then readiness to shere.If passenger's route lies within the driver's
+    route,the ride is alloted.
+  * Estimated fare is calculated based of passenger's start and end point.
+
+  [Project outline](file:///D:/git/mini proj/p1.png)   
 ## SWOT ANALYSIS
 ![SWOT-Sample](Link to Pic)
 
