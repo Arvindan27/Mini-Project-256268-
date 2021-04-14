@@ -26,29 +26,24 @@
   * Estimated fare is calculated based of passenger's start and end point.
   ![overview](overview.png)
 ## SWOT ANALYSIS
-![SWOT-Sample](Link to Pic)
+![SWOT-Sample](swot.png)
 
 # 4W&#39;s and 1&#39;H
 
 ## Who:
-
-**TBD**
+   For vehicle owners and passengers.
 
 ## What:
-
-**TBD**
+People use independent vehicles to travel along a same route and on daily basis icreasing traffic,polution and ride cost.A Ride sharing system application could solve this.
 
 ## When:
-
-**TBD**
+The concept of Ride sharing started first in US during Wold War 2 and then the practices declined in the 1970s.Now in 2020 there are different companies working on this concept (BlaBla) and the practice of ride sharing has been increased in recent times.
 
 ## Where:
-
-**TBD**
-
+ This system is internationaly available.
+ 
 ## How:
-
-**TBD**
+Without a Ride sharing application concept only people in contacts if needed shared their vehicles.The cost of commute for a single person in a vehicle reduces by the implemengation of this concept.Travel with comfort for low price with easy booking is one of major benifits of Ride Sharing application system.
 
 # Detail requirements
 ## High Level Requirements:
