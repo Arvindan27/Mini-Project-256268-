@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "functions.h"
+#include "test.h"
 #include<string.h>
 #include<stdlib.h>
 void signup(void);
