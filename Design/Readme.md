@@ -3,7 +3,7 @@
 ## High Level Design 
 
 --- TBD Structural and Behavioural Diagram
-![HighLevelStructuralDiagram].(Link to Pic)
+![HighLevelStructuralDiagram].(UseCaseDiagram1.png)
 ![HighLevelBehaviouralDiagram].(Link to Pic)
 
 ## Low Level Design 
