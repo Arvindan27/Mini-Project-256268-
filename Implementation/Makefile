@@ -5,7 +5,7 @@ PROJECT_NAME = carpool
 BUILD = build
 
 # All source code files
-SRC = src/Projectmain.c\
+SRC = Projectmain.c
 src/driverdet.c\
 src/fetchdriv.c\
 
