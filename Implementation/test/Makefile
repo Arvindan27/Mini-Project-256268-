@@ -44,7 +44,7 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
+	gcc $(SRC) $(INC) $(TEST_SRC) -o $(PROJECT_OUTPUT)
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
@@ -63,9 +63,9 @@ test:$(BUILD)
 
 
 # Remove all the built files, invoke by `make clean`
-clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+#clean:
+#rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 
 # Create new build folder if not present
-$(BUILD):
-	mkdir build
+#$(BUILD):
+#mkdir build

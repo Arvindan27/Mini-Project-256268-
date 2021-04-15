@@ -63,9 +63,9 @@ test:$(BUILD)
 
 
 # Remove all the built files, invoke by `make clean`
-clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+#clean:
+#	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 
 # Create new build folder if not present
-$(BUILD):
-	mkdir build
+#$(BUILD):
+#	mkdir build
