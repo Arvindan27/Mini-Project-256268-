@@ -6,7 +6,7 @@ void signup(void);
 void login(void);
 void driver(void);
 void passenger(void);
-int main(){
+/*int main(){
     int l;
     printf("WELCOME to the Ride sharing application\n");
     printf("Do you want to login(1) or signup(0)?\n");
@@ -18,7 +18,7 @@ int main(){
         printf("welcomeback\n");
         signup();
     }
-}
+}*/
 void signup(void){
     char email[39];
     char pass[20];
