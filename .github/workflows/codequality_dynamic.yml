@@ -19,4 +19,4 @@ jobs:
     - name: make test
       run: make -C Implementation
     - name: Valgrid
-      run: valgrind ./Implementation/build/Test_Calculator.out
+      run: valgrind ./Implementation/build/carpool.out
