@@ -14,11 +14,9 @@ struct person
     char avail[20];
 
 }pr;
-  
 void driverdet()
 {
     FILE *outfile;
-      
     // open file for writing
     outfile = fopen ("Person.txt", "w");
     if (outfile == NULL)
@@ -28,15 +26,12 @@ void driverdet()
     }
     printf("enter name\n");
     scanf(" %s",pr.name);
-    printf("enter start\n");
+    printf("enter start location between a to z\n");
     scanf(" %s",pr.start);
-    printf("enter end\n");
+    printf("enter end location between a to z\n");
     scanf(" %s",pr.end);
     printf("enter availabilty\n");
-    scanf(" %s",pr.avail);
-
-   
-      
+    scanf(" %s",pr.avail);  
     // write struct to file
     fwrite (&pr, sizeof(struct person), 1, outfile);
     //fwrite (&input2, sizeof(struct person), 1, outfile);
