@@ -27,7 +27,7 @@ void signup(void){
     printf("%39s\n",email);
     printf("Enter Password\n");
     scanf("%20s",pass);
-    printf("re enter password\n",rpass);
+    printf("re enter password\n");
     scanf("%20s",rpass);
     if(strcmp(pass,rpass)==0){
         printf("success\n");
