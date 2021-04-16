@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include "test.h"
+#include<string.h>
 void signup(void);
 void login(void);
 void driver(void);
