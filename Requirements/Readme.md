@@ -48,9 +48,25 @@ Without a Ride sharing application concept only people in contacts if needed sha
 # Detail requirements
 ## High Level Requirements:
 --- TBD in Tabular Format 
-|ID  | Description                        |   Status (Implemented/Future)    |
-|----|------------------------------------|----------------------------------|
-|HL01|User must be able to login to system|Implemented                       |
+|ID  | Description                                            |   Status (Implemented/Future)    |
+|----|--------------------------------------------------------|----------------------------------|
+|HL01|User must be able to login to system                    |Implemented                       |
+|HL02|User must be able to choose between driver and passenger|Implemented                       |
+|HL03|User must be able to enter route                        |Implemented                       |
+|HL04|User must be able to book                               |Implemented                       |
+|HL05|User must be able to choose mode of payment             |Future                            |
+|HL06|Records must be stored in  database                     |Implemented                       |
+|HL07|GUI implementation                                      |Future                            |
 ##  Low level Requirements:
 --- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+|ID  | Description                                            |   Status (Implemented/Future)    |
+|----|--------------------------------------------------------|----------------------------------|
+|LL01|User will be able to login or signup with correct credentials,else error message should be print.|Implemented|
+|LL02|User will be able to choose if they are driver or passenger                                      |Implemented|
+|LL03|If wrong choice is entered error messege should be print                                         |Implemented|
+|LL04|User will be able to enter their route details                                                   |Implemented|
+|LL05|Driver  will be able to update availabilty status when driver                                    |Future     |
+|LL06|If passenger route comes under driver route and driver is available the ride should be assigned  |Implemented|
+|LL07|Cost should be calculated with route of the passenger                                            |Future     |
+|LL08|User will be able to choose the payment method by options .                                      |Future     |
+|LL10|Payment success message should be print after payment is done                                    |Future     |
