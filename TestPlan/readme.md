@@ -6,6 +6,6 @@
 |-------------|---------------------------------------------|-------------------------|----------------------------|----------------|---------------|
 |  H_01       |Check if driver data is stored properly      |struct inputs            |struct data                 |implemented     |PASS           |
 |  H_02       |Check if passenger  data is stored properly  |struct inputs            |struct data                 |implemented     |PASS           |
-|  H_03       |check if availability check works fine       |passenger route details  |yes/no                      |not implemented |-              |
+|  H_03       |check if availability check works fine       |passenger route details  |yes/no                      |implementation  |ERROR          |
 |  H_04       |check if cost of travel returned properly    |passenger details        |cost                        |not implemented |-              |
 |  H_05       |check if payment choice selection works      |choice                   |payment method  w.r.t choice|not implemented |-              |
