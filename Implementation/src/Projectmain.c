@@ -82,7 +82,7 @@ void passenger(){
     if(a1==1){
         printf("you have a pickup available\n");
         printf("do you want to confirm it? yes(1) no(0)");
-        scanf("%d",cn);
+        scanf("%d",&cn);
         if(cn==1){
             fare(s,e);
         }
