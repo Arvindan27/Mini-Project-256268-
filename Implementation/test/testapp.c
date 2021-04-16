@@ -24,11 +24,18 @@ void tearDown()
 	
 }utes;
 
+struct passengerdat
+{
+	char name[20];
+	char start[20];
+  char end[20];
+	
+}utest;
 
 
 
 
-void test_details(void)
+void test_driverdata(void)
 {
 strcpy(utes.name,"Arvindan");
 strcpy(utes.start,"a");
@@ -45,21 +52,20 @@ TEST_ASSERT_EQUAL_STRING("yes",utes.avail);
 
 }
 
-/*void test_display(void)
+void test_passengerdata(void)
 {
-strcpy(stream.passport,"1234");
-strcpy(stream.name,"isha");
-strcpy(stream.email,"ishavinita@gmail.com");
-strcpy(stream.destination,"Singapore");
-
-TEST_ASSERT_EQUAL_STRING("1234",stream.passport);
-TEST_ASSERT_EQUAL_STRING("isha",stream.name);
-TEST_ASSERT_EQUAL_STRING("ishavinita@gmail.com",stream.email);
-TEST_ASSERT_EQUAL_STRING("Singapore",stream.destination);
+strcpy(utest.name,"Arvindan");
+strcpy(utest.start,"a");
+strcpy(utest.end,"l");
 
 
+TEST_ASSERT_EQUAL_STRING("Arvindan",utest.name);
+TEST_ASSERT_EQUAL_STRING("a",utest.start);
+TEST_ASSERT_EQUAL_STRING("l",utest.end);
 
-}*/
+
+
+}
 
 
 
@@ -71,8 +77,8 @@ int main()
     UNITY_BEGIN();
 
     /* Run Test functions */
-    RUN_TEST(test_details);
-    //RUN_TEST(test_display);
+    RUN_TEST(test_driverdata);
+    RUN_TEST(test_passengerdata);
     
     
 

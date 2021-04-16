@@ -33,9 +33,10 @@ int fetchdriv (char s,char e)
   
     // close file
     fclose (infile);
-    if( pr.start[0]<=s<=pr.end[0] && pr.start[0]<=e<=pr.end[0]){
-       return 1;
-    }else{
+    if(s>=pr.start[0] && s<=pr.end[0] && e>=pr.start[0] & e<pr.end[0]){
+        return 1;
+    }
+    else{
         return 0;
     }
     //return 0 ;//(pr.start,pr.end,pr.avail);
