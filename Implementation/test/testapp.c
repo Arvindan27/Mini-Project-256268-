@@ -4,7 +4,7 @@
 #include "unity_internals.h"
 
 
-
+void test_availabilty(void);
 /* Required by the unity test framework */
 void setUp()
 {
@@ -67,7 +67,12 @@ TEST_ASSERT_EQUAL_STRING("l",utest.end);
 
 }
 
-
+void test_availability(void)
+{
+  char s='a';
+  char e='b';
+  TEST_ASSERT_EQUAL(1,(fetchdriv(s,e)));
+}
 
 
 
@@ -79,7 +84,7 @@ int main()
     /* Run Test functions */
     RUN_TEST(test_driverdata);
     RUN_TEST(test_passengerdata);
-    
+    RUN_TEST(test_availability);
     
 
     /* Close the Unity Test Framework */
