@@ -15,6 +15,7 @@ src/driverdet.c\
 src/fetchdriv.c\
 test/testapp.c\
 unity/unity.c\
+src/Person.txt\
 
 # All include folders with header files
 INC	= -Iinc\
