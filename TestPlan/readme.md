@@ -1,17 +1,11 @@
 # TEST PLAN:
 
-## Table no: High level test plan.
+## Table no:1 Test plan.
 
-| **Test ID** | **Description**                                              | **Exp I/P** | **Exp O/P** | **Actual Out** |**Type Of Test**  |    
-|-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
-|  H_01       |--------------------------------------------------------------|  ------------|-------------|----------------|Requirement based |
-|  H_02       |--------------------------------------------------------------|  ------------|-------------|----------------|Scenario based    |
-|  H_03       |--------------------------------------------------------------|  ------------|-------------|----------------|Boundary based    |
-
-## Table no: Low level test plan
-
-| **Test ID** | **Description**                                              | **Exp IN** | **Exp OUT** | **Actual Out** |**Type Of Test**  |    
-|-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
-|  L_01       |--------------------------------------------------------------|  ------------|-------------|----------------|Requirement based |
-|  L_02       |--------------------------------------------------------------|  ------------|-------------|----------------|Scenario based    |
-|  L_03       |--------------------------------------------------------------|  ------------|-------------|----------------|Boundary based    |
+| **Test ID** | **Description**                             | **Exp I/P**             | **Exp O/P**                | **ststus**     |**test status**|    
+|-------------|---------------------------------------------|-------------------------|----------------------------|----------------|---------------|
+|  H_01       |Check if driver data is stored properly      |struct inputs            |struct data                 |implemented     |PASS           |
+|  H_02       |Check if passenger  data is stored properly  |struct inputs            |struct data                 |implemented     |PASS           |
+|  H_03       |check if availability check works fine       |passenger route details  |yes/no                      |not implemented |-              |
+|  H_04       |check if cost of travel returned properly    |passenger details        |cost                        |not implemented |-              |
+|  H_05       |check if payment choice selection works      |choice                   |payment method  w.r.t choice|not implemented |-              |
