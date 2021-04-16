@@ -17,6 +17,7 @@ typedef struct person
 // Driver program
 int fetchdriv (char s,char e)
 {
+    //function to fetch driver details from the file stored and check is passsenger route lies in drivers route and availability.
 
     pers pr;
     FILE *infile;

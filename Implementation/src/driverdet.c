@@ -16,6 +16,7 @@ struct person
 }pr;
 void driverdet()
 {
+    //function to determine driver data and store in text file
     FILE *outfile;
     // open file for writing
     outfile = fopen ("Person.txt", "w");

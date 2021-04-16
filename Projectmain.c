@@ -20,6 +20,7 @@ int main(){
     }
 }
 void signup(void){
+    //this function gets email and password(2 times while signup) to verify.
     char email[39];
     char pass[20];
     char rpass[20];
@@ -40,6 +41,7 @@ void signup(void){
 
 }
 void login(void){
+    //function to get login credentials.
     char email[39];
     char pass[20];
     int n;
@@ -59,6 +61,7 @@ void login(void){
 
 }
 void driver(void){
+    //function to execute driver details fetching function.
     //system ("driverdet.exe");
     driverdet();
     printf("done");
@@ -66,6 +69,7 @@ void driver(void){
 
 }
 void passenger(){
+    //passenger details getting function and cheching avaialability
     char s1[20],e1[20],a[20];
     //system ("fetchdriv.exe");
     //fetchdriv();
@@ -94,6 +98,7 @@ void passenger(){
     }
 }
 void fare(char s,char e){
+    //to find estimated fare with a assumption that cost for each point is 20 rs (a-b --20rs).
     int cost;
     cost=(e-s)*20;
     printf("ride ended\n");
